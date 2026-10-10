@@ -19,8 +19,9 @@ a:hover{color:#22201C;}
 :focus-visible{outline:3px solid #A32E22;outline-offset:3px;}
 </style>
 <style>
-a{transition:transform .12s, box-shadow .12s, background .12s, color .12s;}
-.h0:hover{transform:translate(-2px,-2px) !important;box-shadow:8px 8px 0 #22201C !important;color:#F6EFE3 !important}
+a{transition:transform .12s, box-shadow .12s, background .12s, color .12s, border-color .12s;}
+.lnk{align-self:flex-start;margin-top:auto;font-weight:700;font-size:16px;text-decoration:none;color:inherit;border-bottom:2px solid transparent;}
+.lnk:hover{color:inherit !important;border-bottom-color:currentColor;}
 </style>
 </head>
 <body>
@@ -54,16 +55,22 @@ a{transition:transform .12s, box-shadow .12s, background .12s, color .12s;}
   <section id="work" data-screen-label="Work" style="display:flex;flex-direction:column;gap:28px;padding-bottom:112px;">
     <h2 style="margin:0;font-weight:800;font-size:clamp(32px,4vw,48px);letter-spacing:-0.03em;line-height:1;">What we’re <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;">building</span></h2>
     <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch;">
-      <a class="h0" href="https://trysojourn.app" style="flex:2 1 420px;min-width:0;background:#A32E22;color:#F6EFE3;text-decoration:none;border-radius:28px;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:16px;border:2px solid #22201C;box-shadow:6px 6px 0 #22201C;">
-        <span style="align-self:flex-start;background:#E8B23A;color:#22201C;font-weight:700;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;padding:6px 14px;border-radius:999px;transform:rotate(-3deg);">Our first app</span>
+      <div style="flex:1 1 400px;min-width:0;background:#A32E22;color:#F6EFE3;border-radius:28px;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:16px;border:2px solid #22201C;box-shadow:6px 6px 0 #22201C;">
+        <span style="align-self:flex-start;background:#E8B23A;color:#22201C;font-weight:700;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;padding:6px 14px;border-radius:999px;transform:rotate(-3deg);">Active · current app</span>
         <span style="font-weight:800;font-size:clamp(34px,4.4vw,52px);line-height:0.95;letter-spacing:-0.04em;">Sojourn</span>
-        <span style="font-size:17px;line-height:1.55;max-width:520px;text-wrap:pretty;">A new way to explore scripture, built so you spend more time in the Bible and less time chatting with machines.</span>
-        <span style="font-weight:700;font-size:16px;padding-top:4px;">trysojourn.app ↗</span>
-      </a>
-      <div style="flex:1 1 240px;border:2px dashed #22201C;border-radius:28px;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;justify-content:flex-end;gap:10px;">
-        <span style="font-family:'Instrument Serif',serif;font-style:italic;font-size:30px;line-height:1.1;">More on the way.</span>
-        <span style="font-size:15px;line-height:1.5;opacity:0.75;">Have an idea? We’d love to build it with you.</span>
+        <span style="font-size:17px;line-height:1.55;max-width:520px;text-wrap:pretty;">A new way to explore scripture, built so you spend more time in the Bible and less time chatting with machines. No accounts, no ads, no tracking. Completely free.</span>
+        <a class="lnk" href="https://trysojourn.app">trysojourn.app ↗</a>
       </div>
+      <div style="flex:1 1 400px;min-width:0;background:transparent;color:#22201C;border-radius:28px;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:16px;border:2px solid #22201C;">
+        <span style="align-self:flex-start;border:2px solid currentColor;font-weight:700;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;padding:5px 14px;border-radius:999px;">Defunct</span>
+        <span style="font-weight:800;font-size:clamp(34px,4.4vw,52px);line-height:0.95;letter-spacing:-0.04em;">Lattice</span>
+        <span style="font-size:17px;line-height:1.55;max-width:520px;text-wrap:pretty;">Claude Code for product managers. The premise: no salaried employees, and every dollar of revenue beyond operating expenses given to faith-based charity.</span>
+        <a class="lnk" href="https://pm.withlattice.com/mission/">pm.withlattice.com ↗</a>
+      </div>
+    </div>
+    <div style="border:2px dashed #22201C;border-radius:28px;padding:clamp(24px,3vw,32px) clamp(28px,4vw,44px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+      <span style="font-family:'Instrument Serif',serif;font-style:italic;font-size:30px;line-height:1.1;">More on the way.</span>
+      <span style="font-size:15px;line-height:1.5;opacity:0.75;">Have an idea? We’d love to build it with you.</span>
     </div>
   </section>
 
